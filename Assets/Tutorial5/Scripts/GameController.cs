@@ -45,7 +45,14 @@ public class GameController : MonoBehaviour
 				Debug.Log (string.Format ("GamePad found {0}", testPlayerIndex));
 				Vector3 startPos = new Vector3 (numberOfHazardCircles * circleDist + goal.transform.position.x + circleDist, 0.5f, 0f);
 				GameObject newPlayer = Object.Instantiate (player, startPos, Quaternion.identity) as GameObject;
-				newPlayer.transform.RotateAround (goal.transform.position, Vector3.up, 90 * i - 180 + 45);
+				if (i <= 1)
+				{
+					newPlayer.transform.RotateAround (goal.transform.position, Vector3.up, 90 * i - 180 + 45);
+				}
+				else
+				{
+					newPlayer.transform.RotateAround (goal.transform.position, Vector3.up, -90 * i - 90 + 45);
+				}
 				newPlayer.transform.LookAt (goal.transform.position);
 
 

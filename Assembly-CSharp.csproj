@@ -62,7 +62,7 @@
      <Compile Include="Assets\Shared\Player\PlayerUI\PlayerNumberFaceCamera.cs" />
      <Compile Include="Assets\Shared\Player\PlayerView.cs" />
      <Compile Include="Assets\Shared\XInputDotNet\Examples\XInputTestCS.cs" />
-     <Compile Include="Assets\Tutorial5\Scripts\CamRec.cs" />
+     <Compile Include="Assets\Tutorial5\Scripts\CamRecordPlayback.cs" />
      <Compile Include="Assets\Tutorial5\Scripts\GameController.cs" />
      <None Include="Assets\Shared\XInputDotNet\Docs.txt" />
      <None Include="Assets\Shared\XInputDotNet\MITLicense.txt" />
